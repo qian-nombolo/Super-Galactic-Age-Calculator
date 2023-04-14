@@ -31,12 +31,12 @@ It will serve as a website to determine a user's age based on a planet's solar y
 ## Setup/Installation Requirements
 
 * Clone the project from Github to the local desktop.
-* Open the project folder(project name).
-* Installing all packages with $ npm install.
-* Building the project using webpack with $ npm run build.
-* Starting a development server with $ npm run start.
-* Linting JS files in the src folder with $ npm run lint.
-* Running tests with Jest using $ npm run test.
+* Open the project folder(Super-Galactic-Age-Calculator).
+* Install all packages with $ npm install.
+* Build the project using webpack with $ npm run build.
+* Start a development server with $ npm run start.
+* Lint JS files in the src folder with $ npm run lint.
+* Run tests with Jest using $ npm run test.
 
 ## Known Bugs
 
