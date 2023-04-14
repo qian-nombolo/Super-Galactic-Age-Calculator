@@ -21,6 +21,6 @@ export default class Day {
       marsDays: marsDays,
       jupiterDays: jupiterDays
     };
-  }  
+  } 
 
 }
