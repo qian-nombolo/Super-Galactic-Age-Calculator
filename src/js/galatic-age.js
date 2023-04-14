@@ -1,10 +1,12 @@
 export default class Age {
-  constructor(earth) {
+  constructor(earth, futureB, pastB) {
     this.earth = earth;
+    this.futureB = futureB;
+    this.pastB = pastB;
     this.mercury = earth * 0.24;
     this.venus = earth * 0.62;
     this.mars = earth * 1.88;
-    this.jupiter = earth * 11.86;g
+    this.jupiter = earth * 11.86;
   }
 
   // checkType() {
