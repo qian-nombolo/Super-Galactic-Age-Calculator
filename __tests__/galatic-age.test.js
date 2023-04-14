@@ -20,4 +20,8 @@ describe('Age', () => {
     expect(galatic.getFutureYears()).toEqual({earthYears: 5, mercuryYears: 20.83, venusYears: 8.06, marsYears: 2.65, jupiterYears: 0.42});
   });
 
+  test('should correctly calculate how many days to pass until a future birthday', () => {
+    expect(galatic.getFutureDays().mercuryDays).toEqual(87.6);
+  });
+
 });
