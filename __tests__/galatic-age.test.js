@@ -8,8 +8,8 @@ describe('Age', () => {
   });
 
   test('should correctly calculate how many years have passed on each planet since a past birthday', () => {
-    const galatic = new Age(10, 20, 5);
-    expect(galatic.getPastYears()).toEqual({earthYears: 5, mercuryYears: '2.08', venusYears: '0.81', marsYears: '0.27', jupiterYears: '0.04'});
+    const galatic = new Age(56, 61, 43);
+    expect(galatic.getPastYears()).toEqual({earthYears: 13, mercuryYears: 54.16, venusYears: 20.96, marsYears: 6.91, jupiterYears: 1.09});
   });
 
 
