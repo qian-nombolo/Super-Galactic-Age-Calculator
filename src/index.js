@@ -1,35 +1,26 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './js/triangle.js';
-import Rectangle from './js/rectangle.js';
+import Age from './js/galatic-age.js';
 
-function handleTriangleForm(event) {
+function handleGalaticForm(event) {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
-  const length1 = parseInt(document.querySelector('#length1').value);
-  const length2 = parseInt(document.querySelector('#length2').value);
-  const length3 = parseInt(document.querySelector('#length3').value);
-  const triangle = new Triangle(length1, length2, length3);
-  const response = triangle.checkType();
+  const earth = parseInt(document.querySelector('#age1').value);
+  const pastB = parseInt(document.querySelector('#age2').value);
+  const futureB= parseInt(document.querySelector('#age3').value);
+  const galaxy = new Age(earth, pastB, futureB);
+  const response = galaxy.getPastYears().jupiterYears;
   const pTag = document.createElement("p");
-  pTag.append(`Your result is: ${response}.`);
-  document.querySelector('#response').append(pTag);
-}
+  pTag.append(`The past Jupiter years is: ${response}`);
 
-function handleRectangleForm(event) {
-  event.preventDefault();
-  document.querySelector('#response2').innerText = null;
-  const length1 = parseInt(document.querySelector('#rect-length1').value);
-  const length2 = parseInt(document.querySelector('#rect-length2').value);
-  const rectangle = new Rectangle(length1, length2);
-  const response = rectangle.getArea();
-  const pTag = document.createElement("p");
-  pTag.append(`The area of the rectangle is ${response}.`);
-  document.querySelector('#response2').append(pTag);
+  const response2 = galaxy.getFutureYears().marsYears;
+  document.querySelector('#response').append(pTag);
+  const pTag2 = document.createElement("p");
+  pTag2.append(`The future Mars years is: ${response2}`);
+  document.querySelector('#response2').append(pTag2);
 }
 
 window.addEventListener("load", function() {
-  document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
-  document.querySelector("#rectangle-area-form").addEventListener("submit", handleRectangleForm);
+  document.querySelector("#galatic-form").addEventListener("submit", handleGalaticForm);
 });

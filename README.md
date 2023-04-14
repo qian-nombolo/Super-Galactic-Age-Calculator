@@ -1,8 +1,8 @@
-# Project Name
+# Super-Galactic-Age-Calculator
 
 #### By _Qian Li_ 😊
 
-#### This is my project which demonstrates uses of test-driven development, understanding of constructors and prototypes. 
+#### This is my project which demonstrates uses of test-driven development, understanding of the Red, Green, Refactor workflow. 
 
 ## Technologies Used
 
@@ -26,7 +26,7 @@
 
 ## Description
 
-It will serve as a website for xxxxxxx.
+It will serve as a website to determine a user's age based on a planet's solar years which varies from planet to planet. 
 
 ## Setup/Installation Requirements
 
@@ -37,24 +37,6 @@ It will serve as a website for xxxxxxx.
 * Starting a development server with $ npm run start.
 * Linting JS files in the src folder with $ npm run lint.
 * Running tests with Jest using $ npm run test.
-
-## Tests
-```
-Describe: Function()
-
-  Test: "It should return a xx object with xx"
-  Code: 
-  const xx = new xx();
-  Expected Output: xx
-
-Describe: xx.prototype.addPrice()
-
-  test: "It should return xx of xx from xx."
-  Code:
-  xx.prototype.addPrice(xx)
-  Expected Output: xx
-  
-```
 
 ## Known Bugs
 

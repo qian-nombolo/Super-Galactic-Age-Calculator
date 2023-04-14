@@ -17,7 +17,7 @@ module.exports = {
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Super-Galactic-Age-Calculator',
       template: './src/index.html',
       inject: 'body'
     })
@@ -29,6 +29,24 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader'
+        ]
+      },     
+      {
+        test: /\.(gif|png|avif|jpe?g)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/'
+            }
+          }
+        ]
+      },
+      {
+        test:/\.html$/,
+        use: [
+          'html-loader'
         ]
       }
     ]
