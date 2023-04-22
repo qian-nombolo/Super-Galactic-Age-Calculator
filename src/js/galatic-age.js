@@ -52,20 +52,4 @@ export default class Age {
     };
   }
 
-  getFutureDays() {
-    let earthDays = this.futureB - this.earth;
-    let mercuryDays = Math.floor((earthDays / 0.24)*100) / 100;
-    let venusDays= Math.floor((earthDays / 0.62)* 100) / 100;
-    let marsDays = Math.floor((earthDays / 1.88)* 100) / 100;
-    let jupiterDays = Math.floor((earthDays / 11.86)* 100) / 100;
-
-    return {
-      earthDays: earthDays,
-      mercuryDays: mercuryDays,
-      venusDays: venusDays,
-      marsDays: marsDays,
-      jupiterDays: jupiterDays
-    };
-  }
-
 }
