@@ -13,7 +13,7 @@ describe('Age', () => {
   });
 
   test('should correctly calculate the galaxy years', () => {
-    expect(galatic.getGalticYears()).toEqual({mercuryYears: 13.44, venusYears: 34.72, marsYears: 105.28, jupiterYears: 664.16});
+    expect(galatic.getGalaticYears()).toEqual({mercuryYears: 13.44, venusYears: 34.72, marsYears: 105.28, jupiterYears: 664.16});
   });
 
   test('should correctly calculate how many years have passed on each planet since a past birthday', () => {
