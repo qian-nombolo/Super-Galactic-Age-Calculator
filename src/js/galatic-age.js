@@ -3,11 +3,22 @@ export default class Age {
     this.earth = earth;
     this.futureB = futureB;
     this.pastB = pastB;
-    this.mercury = earth * 0.24;
-    this.venus = earth * 0.62;
-    this.mars = earth * 1.88;
-    this.jupiter = earth * 11.86;
   }
+
+  getGalaticYears() {
+    let earthYears = this.earth;
+    let mercuryYears = earthYears * 0.24;
+    let venusYears = earthYears * 0.62;
+    let marsYears = earthYears * 1.88;
+    let jupiterYears = earthYears * 11.86;
+
+    return {
+      mercuryYears: mercuryYears,
+      venusYears: venusYears,
+      marsYears: marsYears,
+      jupiterYears: jupiterYears
+    };
+  } 
 
   getPastYears() {
     let earthYears = this.earth - this.pastB;
