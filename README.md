@@ -28,6 +28,11 @@
 
 It will serve as a website to determine a user's age based on a planet's solar years which varies from planet to planet. 
 
+## 🌻 Website Screenshot
+
+* Webpage
+![Screenshot of website](/src/assets/images/solar.png)
+
 ## Setup/Installation Requirements
 
 * Clone the project from Github to the local desktop.

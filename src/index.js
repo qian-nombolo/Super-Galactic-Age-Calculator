@@ -7,8 +7,8 @@ function handleGalaticForm(event) {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
   const earth = parseInt(document.querySelector('#age1').value);
-  const pastB = parseInt(document.querySelector('#age2').value);
-  const futureB= parseInt(document.querySelector('#age3').value);
+  const futureB = parseInt(document.querySelector('#age2').value);
+  const pastB= parseInt(document.querySelector('#age3').value);
   const galaxy = new Age(earth, pastB, futureB);
   const response = galaxy.getPastYears().jupiterYears;
   const pTag = document.createElement("p");
